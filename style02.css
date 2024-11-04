@@ -10,14 +10,6 @@ body{
 	-webkit-text-size-adjust: 100%;         /*文字大小會達到易讀的大小，但是不會修改佈局*/
 }
 
-body{
-    background-image: url(raining.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 
 /* 區塊設定 */
 header{
@@ -29,7 +21,7 @@ main{
 	padding: 30px;      /* 內距，內部距離設為30px*/
 	font-size: 16px;    /* 內文的字體大小設為16px*/
 	line-height: 2em;   /* 行間設為2個字高*/
-	color:#464C4F;      /* 文字顏色設定*/
+	color:#ffffff;      /* 文字顏色設定*/
 }
 footer{
 	background:#1d3cb9; /* 背景色*/

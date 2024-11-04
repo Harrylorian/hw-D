@@ -15,11 +15,11 @@ header{
 	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/
 }
 main{
-	background:#D5EFF5;  /* 背景色*/
+	background-image: url(road.jpg);  /* 背景色*/
 	padding: 30px;      /* 內距，內部距離設為30px*/
 	font-size: 16px;    /* 內文的字體大小設為16px*/
 	line-height: 2em;   /* 行間設為2個字高*/
-	color:#464C4F;      /* 文字顏色設定*/
+	color:#ffffff;      /* 文字顏色設定*/
 }
 footer{
 	background:#ffffff; /* 背景色*/
