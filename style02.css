@@ -9,13 +9,23 @@ body{
 	text-align: center; /*文字居中對齊*/
 	-webkit-text-size-adjust: 100%;         /*文字大小會達到易讀的大小，但是不會修改佈局*/
 }
+
+body{
+    background-image: url(raining.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 /* 區塊設定 */
 header{
 	background:#104951;  /* 背景色*/
 	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/
 }
 main{
-	background:#D5EFF5;  /* 背景色*/
+	background-image: url(raining.jpg);  /* 背景色*/
 	padding: 30px;      /* 內距，內部距離設為30px*/
 	font-size: 16px;    /* 內文的字體大小設為16px*/
 	line-height: 2em;   /* 行間設為2個字高*/
