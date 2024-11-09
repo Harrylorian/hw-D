@@ -28,13 +28,14 @@ header {
     background: var(--primary-color);
     padding-top: 10px;
 }
-main {
-    background-image: url(raining.jpg);
-    padding: 30px;
-    font-size: 16px;
-    line-height: 2em;
-    color: #ffffff;
+main{
+	background-image: url(raining2.jpg);  /* 背景色*/
+	padding: 30px;      /* 內距，內部距離設為30px*/
+	font-size: 16px;    /* 內文的字體大小設為16px*/
+	line-height: 2em;   /* 行間設為2個字高*/
+	color:#ffffff;      /* 文字顏色設定*/
 }
+	
 footer {
     background: var(--secondary-color);
     padding: 10px;
@@ -84,7 +85,7 @@ a:hover, a:focus {
 }
 .navigation ul li a {
     color: #ffffff; /* 導覽列超連結文字顏色設為白色 */
-    text-decoration: none; /* 移除底線 */
+    text-decoration: underline; /* 移除底線 */
 
 }
 .navigation ul li a:hover {
