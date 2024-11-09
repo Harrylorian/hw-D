@@ -1,161 +1,86 @@
-/* 全局樣式 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+@charset "UTF-8"; /* UTF-8編碼，使中文不會產生亂碼*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); /* google雲端字體 思源黑體*/
+/* CSS Document */
+/* body */
+body{
+	font-family:"Noto Sans TC", sans-serif;  /* google雲端字體 思源黑體*/
+	background: #fff;   /* 背景色*/
+	margin: 0;          /* 外部距離設為0*/
+	text-align: center; /*文字居中對齊*/
+	-webkit-text-size-adjust: 100%;         /*文字大小會達到易讀的大小，但是不會修改佈局*/
 }
 
-body {
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-/* 頁面布局 */
-header, main, footer {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
+/* 區塊設定 */
+header{
+	background:#104951;  /* 背景色*/
+	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/
 }
-
-/* 標題與導航 */
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-align: center;
+main{
+	background-image: url(road.jpg);  /* 背景色*/
+	padding: 30px;      /* 內距，內部距離設為30px*/
+	font-size: 16px;    /* 內文的字體大小設為16px*/
+	line-height: 2em;   /* 行間設為2個字高*/
+	color:#ffffff;      /* 文字顏色設定*/
 }
-
-header h3 {
-    font-size: 1.2em;
-    color: #666;
-    text-align: center;
+footer{
+	background:#1d3cb9; /* 背景色*/
+	padding: 10px;      /* 內距，內部距離設為10px*/
+	font-size: 14px;    /* 內文的字體大小設為14px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
 }
-
-header h2 {
-    font-size: 1em;
-    color: #888;
-    text-align: center;
-    margin-bottom: 15px;
+/* 網站標題 */
+h1 {
+	font-size: 28px;    /* 內文的字體大小設為28px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
+	font-weight:700;    /* 文字粗細設定，100,300,400,500,700,700*/	
 }
-
+/* 標題 */
+h2 {
+	font-size: 16px;    /* 內文的字體大小設為16px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
+	font-weight: 300;   /* 文字粗細設定*/
+}
+h3{
+	font-size: 14px;    /* 內文的字體大小設為14px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
+	font-weight: 100;   /* 文字粗細設定*/
+}
+/* 超連結 */
+a{
+	color: #EF5095;        /* 超連結屬性的文字顏色設定*/
+}
+a:hover{
+	color: #048FC1;        /* 超連結『滑鼠滑過』文字顏色設定*/
+	text-decoration: none; /* 超連結『滑鼠滑過』文字無底線裝飾效果*/
+}
+/* 導覽列 */
 .navigation ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+    background:#929292; /* 導覽列背景色*/
+    margin: 0;          /* 外部距離設為0*/
+    padding: 05px;      /* 內距，內部距離設為10px*/
+    text-align: center; /* 文字居中對齊*/
+}
+.navigation ul li {
+    list-style-type: none;  /* 取消項目清單符號*/
+    display: inline;        /* 使元素於同一行呈現（文字或圖片不換行）*/
+    margin: 0 8px;          /* 外部距離設定，上下0px,左右8px*/
+}
+.navigation ul li a {
+    color: #ffffff;         /* 導覽列超連結文字顏色設定*/
+    text-decoration: none;  /* 導覽列超連結文字無底線裝飾效果*/
+}
+.navigation ul li a:hover {
+    color: #b7e862;             /* 導覽列超連結『滑鼠滑過』文字顏色設定*/
+    text-decoration: underline; /* 導覽列超連結『滑鼠滑過』文字有底線裝飾效果*/
+}
+#tabs{
+	width: 50%;       /* tabs 寬度設為50% */
+	margin:0px auto;  /* tabs 置中對齊 */
 }
 
-.navigation li {
-    margin: 0 10px;
+.ui-widget-content {
+    border: 1px solid #aaaaaa;         /* tabs 邊框設為寬1px灰色的實線 ，可自行修改 */
+    background: rgba(172,217,224,0.6); /* tabs 底色 設定為淺藍色，不透明度60%*/
+    color: #222222;                    /* tabs 文字的顏色*/
 }
-
-.navigation a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navigation a:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-/* 主要內容 */
-main {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.lyrics p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    margin: 15px 0;
-}
-
-#tabs {
-    margin-top: 20px;
-}
-
-#tabs ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-#tabs li {
-    margin: 0 5px;
-}
-
-#tabs a {
-    text-decoration: none;
-    color: #555;
-    padding: 8px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#tabs .ui-tabs-active a {
-    background-color: #333;
-    color: #fff;
-    border-color: #333;
-}
-
-.media {
-    margin-top: 30px;
-}
-
-.media iframe {
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.image img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* 版權區 */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #999;
-}
-
-/* 動畫效果 */
-.fade-in-text {
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 2s ease, transform 2s ease;
-}
-
-/* 打字機風格逐字效果 */
-.typing-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid black;
-    font-size: 1.5em;
-    animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
-}
-
-/* 打字效果動畫 */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-/* 光標閃爍效果 */
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-}
-
