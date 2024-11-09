@@ -9,6 +9,8 @@ body{
 	text-align: center; /*文字居中對齊*/
 	-webkit-text-size-adjust: 100%;         /*文字大小會達到易讀的大小，但是不會修改佈局*/
 }
+
+
 /* 區塊設定 */
 header{
 	background:#095940;  /* 背景色*/

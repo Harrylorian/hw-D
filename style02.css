@@ -85,6 +85,12 @@ a:hover{
     color: #222222;                    /* tabs 文字的顏色*/
 }
 
+img{
+	width: 50%;
+	border-radius: 10px 0 10px 0;
+	box-shadow: 1px 1px 5px #258CA6;
+	
+
 /* h1標題動畫的CSS設定*/
 h1 {
 	animation-duration: 3s;
