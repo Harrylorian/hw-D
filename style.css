@@ -84,3 +84,12 @@ a:hover{
     background: rgba(172,217,224,0.6); /* tabs 底色 設定為淺藍色，不透明度60%*/
     color: #222222;                    /* tabs 文字的顏色*/
 }
+
+/* 圖片樣式 */
+.image img {
+    max-width: 100%; /* 讓圖片最大寬度是父元素寬度 */
+    height: auto; /* 保持圖片比例 */
+    margin: 20px 0; /* 圖片上下留空間 */
+    display: block; /* 使圖片成為塊級元素，避免圖片下方有不必要的空隙 */
+    border-radius: 10px; /* 圓角效果，可以根據需求調整 */
+}
